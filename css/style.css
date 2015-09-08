@@ -1,0 +1,10 @@
+
+.verde { 
+	background-color:#4CB849; 
+	cursor: pointer;
+}
+
+.form { margin: 0px auto; width: 320px; }
+.form-control { margin-bottom: 20px; }
+
+.form #login-form input.error2 { border: 1px solid #a94442; }
