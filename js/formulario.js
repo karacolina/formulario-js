@@ -4,25 +4,33 @@ $(document).ready(function() {
 
 	$("#login-form").submit(function(event) {
 
-		
-
+		//Guardar en variables el valor que tengan las cajas de texto
 		var nombre = $("#name").val();
+		var apellido = $("#apellido").val();
+		var mail = $("#mail").val();
+		var telefono = $("#telefono").val();
 		var password = $("#password").val();
 
 
 		//si nombre es distinto de vacio
-		if(nombre != "" && password != ""){
-
+		if(nombre != ""){
 			console.log("nombre :" +nombre);
-			console.log("password :" +password);
+
+		}else{
+			$("#name").addClass('error2');
+			$("#error").fadeIn();
+
+		}
+
+		//si apellido es distinto de vacio
+		if(apellido != ""){
+			console.log("apellido :" +apellido);
 
 		}else{
 			$(".form-control").addClass('error2');
-			$(".form #error").fadeIn();
+			$("#error").fadeIn();
 
 		}
-		
-
 
 		//para que no se cargue la pag
 		event.preventDefault();
