@@ -3,33 +3,32 @@
 		<meta charset="UTF-8">
 		<title>Jquery</title>
 		<meta name="description" content="Pruebas de Javascript">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/Javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/Javascript" src="js/formulario.js"></script>
 	</head>
 
 	<body>
 
-<div class="form">
+		<div class="form">
 			<form id="login-form">
 				<h3>Contacto</h3>
 
-				<input type="text" value="" name="user-name" id="name" class="form-control" placeholder="Nombre">
+				<input type="text" value="" name="user-name" id="name" class="form-control" placeholder="*Nombre">
 
-				<input type="text" value="" name="user-apellido" id="apellido" class="form-control" placeholder="Apelllido">
+				<input type="text" value="" name="user-apellido" id="apellido" class="form-control" placeholder="*Apelllido">
 
-				<input type="text" value="" name="mail" id="mail" class="form-control" placeholder="e-mail">
+				<input type="email" value="" name="mail" id="mail" class="form-control" placeholder="*e-mail">
 
-				<input type="text" value="" name="telefono" id="telefono" class="form-control" placeholder="Telefono">
+				<input type="tel" value="" name="telefono" id="telefono" class="form-control" placeholder="*Telefono (8 digitos)">
 
-				<input type="password" value="" name="password" id="password" class="form-control" placeholder="Password">
-				<button type="submit" class="btn btn-primary">Enviar</button>
+				<input type="password" value="" name="password" id="password" class="form-control" placeholder="*Password">
+				<button type="submit" class="btn btn-primary boton">Enviar</button>
 			</form>
 
-			<div id="error" class='alert alert-danger' role="alert"><p>Complete todos los campos</p></div>
+			<div id="error" class='alert alert-danger' role="alert"><p>Complete todos los campos!</p></div>
 		</div>
-
 
 
 	</body>
