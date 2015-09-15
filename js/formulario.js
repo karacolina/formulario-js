@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(".form #error").hide();
+	$("#error").hide();
 
 
 	$("#login-form").submit(function(event) {
@@ -45,9 +45,9 @@ $(document).ready(function() {
 		if(telefono!= 0 && telefono.length == 8) {
 			console.log("telefono :" +telefono);
 			$("#telefono").removeClass('error2');
-
 		}else{
 			$("#telefono").addClass('error2')
+			//$("#error").html("<span>teléfono más largo!!</span>");
 			$("#error").fadeIn();
 		}
 
@@ -63,20 +63,12 @@ $(document).ready(function() {
 		}
 
 
-		if(nombre+apellido+mail+telefono+password!= 0 ) {
+		/*if(nombre+apellido+mail+telefono+password!= 0 ) {
 
 			alert("Formulario enviado correctamente");
 		}else{
 			$("#error").fadeIn();
-		}
-
-
-
-
-
-
-
-
+		}*/
 
 
 		/*var error = 0;
@@ -88,13 +80,9 @@ $(document).ready(function() {
 			$("#error").hide();
 		}*/
 
-
-
 		//para que no se cargue la pag
 		event.preventDefault();
 
-
-		
 	});
 	
 });
