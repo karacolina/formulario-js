@@ -62,6 +62,15 @@ $(document).ready(function() {
 			$("#error").fadeIn();
 		}
 
+		 /*Este es un comentario*/
+		 /*Este es un comentario*/
+		 /*Este es un comentario*/
+		 /*Este es un comentario*/
+		 /*Este es un comentario*/
+		 /*Este es un comentario*/
+		 /*Este es un comentario*/
+		 /*Este es un comentario*/
+		 
 
 		/*if(nombre+apellido+mail+telefono+password!= 0 ) {
 
